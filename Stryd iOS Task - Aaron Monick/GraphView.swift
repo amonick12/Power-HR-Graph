@@ -20,14 +20,8 @@ import UIKit
 
     var showPoints = false
     
-    //y-axis labels
-    var topLabel = UILabel(frame: CGRectZero)
-    var topMidLabel = UILabel(frame: CGRectZero)
-    var midLabel = UILabel(frame: CGRectZero)
-    var bottomMidLabel = UILabel(frame: CGRectZero)
-    var bottomLabel = UILabel(frame: CGRectZero)
-    
     var xLabels: [UILabel] = []
+    var yLabels: [UILabel] = []
     
     override func drawRect(rect: CGRect) {
 
@@ -38,14 +32,14 @@ import UIKit
         let context = UIGraphicsGetCurrentContext()
         let colors = [startColor.CGColor, endColor.CGColor]
         let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let colorLocations: [CGFloat] = [0.0, 1.0]
+        let colorLocations: [CGFloat] = [1.0, 0.0]
         let gradient = CGGradientCreateWithColors(colorSpace, colors, colorLocations)
         let startPoint = CGPoint.zeroPoint
         let endPoint = CGPoint(x: 0, y: self.bounds.height)
         CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, CGGradientDrawingOptions.DrawsAfterEndLocation)
         
         //calculate x point
-        let margin: CGFloat = 35.0
+        let margin: CGFloat = 40.0
         let columnXPoint = { (column:Int) -> CGFloat in
             let spacer = (width - margin * 2 - 4) / CGFloat((self.powerGraphPoints.count - 1))
             var x: CGFloat = CGFloat(column) * spacer
@@ -67,7 +61,7 @@ import UIKit
         //power path
         powerColor.setFill()
         powerColor.setStroke()
-        
+
         let powerGraphPath = UIBezierPath()
         powerGraphPath.moveToPoint(CGPoint(x: columnXPoint(0), y: columnYPoint(powerGraphPoints[0])))
         
@@ -81,7 +75,6 @@ import UIKit
                 let circle = UIBezierPath(ovalInRect: CGRect(origin: nextPoint, size: CGSize(width: 5.0, height: 5.0)))
                 circle.fill()
             }
-            
         }
         
         powerGraphPath.stroke()
@@ -107,74 +100,75 @@ import UIKit
         
         hrGraphPath.stroke()
         
-        //horizontal lines
+        //horizontal lines and labels
         let linePath = UIBezierPath()
-        let lightColor = UIColor(white: 1.0, alpha: 0.5)
-        lightColor.setStroke()
-        //top line
-        linePath.moveToPoint(CGPoint(x: margin, y: topBorder))
-        linePath.addLineToPoint(CGPoint(x: width - margin, y: topBorder))
-        topLabel.text = String(maxValue)
-        topLabel.frame = CGRectMake(width - margin, topBorder - 15, 40, 30)
-        topLabel.textColor = lightColor
-        bottomLabel.textAlignment = .Center
-        addSubview(topLabel)
-        //top-half center line
-        linePath.moveToPoint(CGPoint(x: margin, y: graphHeight/4 + topBorder))
-        linePath.addLineToPoint(CGPoint(x: width - margin, y: graphHeight/4 + topBorder))
-        topMidLabel.text = String(maxValue/4 * 3)
-        topMidLabel.frame = CGRectMake(width - margin, graphHeight/4 + topBorder - 15, 40, 30)
-        topMidLabel.textColor = lightColor
-        bottomLabel.textAlignment = .Center
-        addSubview(topMidLabel)
-        //center line
-        linePath.moveToPoint(CGPoint(x: margin, y: graphHeight/2 + topBorder))
-        linePath.addLineToPoint(CGPoint(x: width - margin, y: graphHeight/2 + topBorder))
-        midLabel.text = String(maxValue/2)
-        midLabel.frame = CGRectMake(width - margin, graphHeight/2 + topBorder - 15, 40, 30)
-        midLabel.textColor = lightColor
-        bottomLabel.textAlignment = .Center
-        addSubview(midLabel)
-        //bottom-half center line
-        linePath.moveToPoint(CGPoint(x: margin, y: graphHeight/4 * 3 + topBorder))
-        linePath.addLineToPoint(CGPoint(x: width - margin, y: graphHeight/4 * 3 + topBorder))
-        bottomMidLabel.text = String(maxValue/4)
-        bottomMidLabel.frame = CGRectMake(width - margin, graphHeight/4 * 3 + topBorder - 15, 40, 30)
-        bottomMidLabel.textColor = lightColor
-        bottomLabel.textAlignment = .Center
-        addSubview(bottomMidLabel)
-        //bottom line
-        linePath.moveToPoint(CGPoint(x: margin, y: height - bottomBorder))
-        linePath.addLineToPoint(CGPoint(x: width - margin, y: height - bottomBorder))
-        bottomLabel.text = "0"
-        bottomLabel.frame = CGRectMake(width - margin, graphHeight + topBorder - 15, 30, 30)
-        bottomLabel.textColor = lightColor
-        bottomLabel.textAlignment = .Center
-        addSubview(bottomLabel)
+        let lineColor = UIColor(white: 1.0, alpha: 0.5)
+        let axisColor = UIColor(white: 1.0, alpha: 0.8)
+        lineColor.setStroke()
+        for i in 0..<5 {
+            yLabels.append(UILabel(frame: CGRectZero))
+            yLabels[i].textColor = axisColor
+            yLabels[i].textAlignment = .Center
+            switch i {
+            case 0:
+                //top line
+                linePath.moveToPoint(CGPoint(x: margin, y: topBorder))
+                linePath.addLineToPoint(CGPoint(x: width - margin, y: topBorder))
+                yLabels[i].text = String(maxValue)
+                yLabels[i].frame = CGRectMake(width - margin, topBorder - 15, 40, 30)
+                break
+            case 1:
+                //top-half center line
+                linePath.moveToPoint(CGPoint(x: margin, y: graphHeight/4 + topBorder))
+                linePath.addLineToPoint(CGPoint(x: width - margin, y: graphHeight/4 + topBorder))
+                yLabels[i].text = String(maxValue/4 * 3)
+                yLabels[i].frame = CGRectMake(width - margin, graphHeight/4 + topBorder - 15, 40, 30)
+                break
+            case 2:
+                //center line
+                linePath.moveToPoint(CGPoint(x: margin, y: graphHeight/2 + topBorder))
+                linePath.addLineToPoint(CGPoint(x: width - margin, y: graphHeight/2 + topBorder))
+                yLabels[i].text = String(maxValue/2)
+                yLabels[i].frame = CGRectMake(width - margin, graphHeight/2 + topBorder - 15, 40, 30)
+                break
+            case 3:
+                //bottom-half center line
+                linePath.moveToPoint(CGPoint(x: margin, y: graphHeight/4 * 3 + topBorder))
+                linePath.addLineToPoint(CGPoint(x: width - margin, y: graphHeight/4 * 3 + topBorder))
+                yLabels[i].text = String(maxValue/4)
+                yLabels[i].frame = CGRectMake(width - margin, graphHeight/4 * 3 + topBorder - 15, 40, 30)
+                break
+            case 4:
+                //bottom line
+                linePath.moveToPoint(CGPoint(x: margin, y: height - bottomBorder))
+                linePath.addLineToPoint(CGPoint(x: width - margin, y: height - bottomBorder))
+                yLabels[i].text = "0"
+                yLabels[i].frame = CGRectMake(width - margin, graphHeight + topBorder - 15, 30, 30)
+                break
+            default:
+                break
+            }
+            addSubview(yLabels[i])
+        }
         
         linePath.lineWidth = 1.0
         linePath.stroke()
         
-        let xInterval = powerGraphPoints.count / 10
-//        if xLabels.isEmpty {
-//            for i in 0...9 {
-//                xLabels.append(UILabel(frame: CGRectZero))
-//            }
-//        }
         //vertical labels
-//        xLabels.removeAll()
-//        setNeedsDisplay()
+        let xInterval = powerGraphPoints.count / 10
         for i in 0..<10 {
             xLabels.append(UILabel(frame: CGRectZero))
             xLabels[i].text = String(xInterval * i / 60)
-            xLabels[i].textColor = UIColor(white: 1.0, alpha: 0.5)
-            //print(String(xInterval * i / 60))
+            xLabels[i].textColor = UIColor(white: 1.0, alpha: 0.8)
             let ratio = Double(i)/10
-            var xValue = Double(width) * ratio
-            if i == 0 {
-                xValue += 15
+            var xValue = Double(width - 2 * margin) * ratio
+
+            if UIDevice.currentDevice().orientation == UIDeviceOrientation.LandscapeLeft || UIDevice.currentDevice().orientation == UIDeviceOrientation.LandscapeRight {
+                xValue = Double(width - margin) * ratio
+            } else {
+                xValue = Double(width - 2 * margin) * ratio
             }
-            xLabels[i].frame = CGRectMake(margin + CGFloat(xValue) - 15, graphHeight + topBorder + 5, 30, 30)
+            xLabels[i].frame = CGRectMake(CGFloat(xValue) + margin, graphHeight + topBorder + 5, 30, 30)
             addSubview(xLabels[i])
         }
     }

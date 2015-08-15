@@ -3,6 +3,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+            <string>HelveticaNeue-Medium</string>
+            <string>HelveticaNeue-Medium</string>
+            <string>HelveticaNeue-Medium</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ0-wx-9tP">
-                                        <rect key="frame" x="173" y="25" width="48" height="21"/>
+                                        <rect key="frame" x="168" y="25" width="48" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="7c6-xT-jgM"/>
                                             <constraint firstAttribute="height" constant="21" id="jWz-cW-ibB"/>
@@ -30,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8a-gc-X9H">
-                                        <rect key="frame" x="357" y="25" width="83" height="21"/>
+                                        <rect key="frame" x="307" y="25" width="83" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="83" id="Ijq-yQ-Aqv"/>
                                             <constraint firstAttribute="height" constant="21" id="YI4-rg-FHI"/>
@@ -39,25 +47,69 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB7-kU-mbM">
-                                        <rect key="frame" x="270" y="576" width="61" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time(min)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB7-kU-mbM">
+                                        <rect key="frame" x="268" y="576" width="65" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="61" id="7tv-Gj-an5"/>
+                                            <constraint firstAttribute="width" constant="65" id="7tv-Gj-an5"/>
                                             <constraint firstAttribute="height" constant="21" id="wOr-SX-Sf6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVG:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Va1-BC-RVQ">
+                                        <rect key="frame" x="229" y="18" width="28" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="5de-ta-fFQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAX:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4q-2T-4at">
+                                        <rect key="frame" x="403" y="34" width="30" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="5kN-bf-yej"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVG:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf6-nT-VW7">
+                                        <rect key="frame" x="403" y="18" width="28" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="499-p8-OGq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAX:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNM-SK-wK8">
+                                        <rect key="frame" x="229" y="34" width="30" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="dBN-ie-eAW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="EQ0-wx-9tP" firstAttribute="centerX" secondItem="7Nq-7L-iak" secondAttribute="centerX" constant="-103" id="9ME-MB-CWd"/>
+                                    <constraint firstItem="HNM-SK-wK8" firstAttribute="top" secondItem="7Nq-7L-iak" secondAttribute="top" constant="34" id="0qg-L7-zQc"/>
+                                    <constraint firstItem="jf6-nT-VW7" firstAttribute="leading" secondItem="f8a-gc-X9H" secondAttribute="trailing" constant="13" id="2cj-MF-jUs"/>
+                                    <constraint firstItem="EQ0-wx-9tP" firstAttribute="centerX" secondItem="7Nq-7L-iak" secondAttribute="centerX" constant="-108" id="9ME-MB-CWd"/>
+                                    <constraint firstItem="Va1-BC-RVQ" firstAttribute="leading" secondItem="EQ0-wx-9tP" secondAttribute="trailing" constant="13" id="D1I-a5-QZp"/>
                                     <constraint firstAttribute="bottom" secondItem="BB7-kU-mbM" secondAttribute="bottom" constant="3" id="DHv-oI-oM6"/>
-                                    <constraint firstItem="f8a-gc-X9H" firstAttribute="centerX" secondItem="7Nq-7L-iak" secondAttribute="centerX" constant="98.5" id="E1c-n8-DNW"/>
+                                    <constraint firstItem="f8a-gc-X9H" firstAttribute="centerX" secondItem="7Nq-7L-iak" secondAttribute="centerX" constant="48.5" id="E1c-n8-DNW"/>
                                     <constraint firstItem="f8a-gc-X9H" firstAttribute="top" secondItem="7Nq-7L-iak" secondAttribute="top" constant="25" id="NZK-u7-Z08"/>
                                     <constraint firstItem="EQ0-wx-9tP" firstAttribute="top" secondItem="7Nq-7L-iak" secondAttribute="top" constant="25" id="Q8a-Af-mMx"/>
+                                    <constraint firstItem="HNM-SK-wK8" firstAttribute="leading" secondItem="EQ0-wx-9tP" secondAttribute="trailing" constant="13" id="SdA-rA-7oI"/>
+                                    <constraint firstItem="jf6-nT-VW7" firstAttribute="top" secondItem="7Nq-7L-iak" secondAttribute="top" constant="18" id="TTj-Zr-JQs"/>
+                                    <constraint firstItem="Va1-BC-RVQ" firstAttribute="top" secondItem="7Nq-7L-iak" secondAttribute="top" constant="18" id="Xi2-Qp-Eu3"/>
+                                    <constraint firstItem="w4q-2T-4at" firstAttribute="leading" secondItem="f8a-gc-X9H" secondAttribute="trailing" constant="13" id="a5G-on-qxm"/>
                                     <constraint firstItem="BB7-kU-mbM" firstAttribute="centerX" secondItem="7Nq-7L-iak" secondAttribute="centerX" id="opc-Za-eWH"/>
+                                    <constraint firstItem="w4q-2T-4at" firstAttribute="top" secondItem="7Nq-7L-iak" secondAttribute="top" constant="34" id="r1Y-8l-Tjr"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -83,8 +135,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Nq-7L-iak" secondAttribute="bottom" id="yeg-yG-RAu"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="avgHRLabel" destination="jf6-nT-VW7" id="ktM-Fm-yH5"/>
+                        <outlet property="avgPowerLabel" destination="Va1-BC-RVQ" id="50a-sO-1re"/>
                         <outlet property="graphView" destination="7Nq-7L-iak" id="uS6-1t-bVs"/>
+                        <outlet property="maxHRLabel" destination="w4q-2T-4at" id="Z6X-o5-BM1"/>
+                        <outlet property="maxPowerLabel" destination="HNM-SK-wK8" id="5gw-VV-mbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
