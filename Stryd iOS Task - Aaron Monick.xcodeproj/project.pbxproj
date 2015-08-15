@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000AAA0C1B7E635300C68E76 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000AAA0B1B7E635300C68E76 /* GraphView.swift */; };
+		00ED07F61B7D206700992C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED07F51B7D206700992C5B /* AppDelegate.swift */; };
+		00ED07F81B7D206700992C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED07F71B7D206700992C5B /* ViewController.swift */; };
+		00ED07FB1B7D206700992C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ED07F91B7D206700992C5B /* Main.storyboard */; };
+		00ED07FD1B7D206700992C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00ED07FC1B7D206700992C5B /* Assets.xcassets */; };
+		00ED08001B7D206700992C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ED07FE1B7D206700992C5B /* LaunchScreen.storyboard */; };
+		00ED080B1B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED080A1B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickTests.swift */; };
+		00ED08161B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED08151B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickUITests.swift */; };
+		00ED08241B7D208100992C5B /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED08231B7D208100992C5B /* APIController.swift */; };
+		00ED082B1B7D214D00992C5B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ED082A1B7D213600992C5B /* Charts.framework */; };
+		00ED082C1B7D214D00992C5B /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00ED082A1B7D213600992C5B /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00ED08071B7D206700992C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00ED07EA1B7D206700992C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00ED07F11B7D206700992C5B;
+			remoteInfo = "Stryd iOS Task - Aaron Monick";
+		};
+		00ED08121B7D206700992C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00ED07EA1B7D206700992C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00ED07F11B7D206700992C5B;
+			remoteInfo = "Stryd iOS Task - Aaron Monick";
+		};
+		00ED08291B7D213600992C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00ED08251B7D213600992C5B /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		00ED082D1B7D214D00992C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00ED08251B7D213600992C5B /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00ED082F1B7D214E00992C5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00ED082C1B7D214D00992C5B /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000AAA0B1B7E635300C68E76 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		00ED07F21B7D206700992C5B /* Stryd iOS Task - Aaron Monick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stryd iOS Task - Aaron Monick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00ED07F51B7D206700992C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00ED07F71B7D206700992C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00ED07FA1B7D206700992C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00ED07FC1B7D206700992C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00ED07FF1B7D206700992C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00ED08011B7D206700992C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00ED08061B7D206700992C5B /* Stryd iOS Task - Aaron MonickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stryd iOS Task - Aaron MonickTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00ED080A1B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stryd_iOS_Task___Aaron_MonickTests.swift"; sourceTree = "<group>"; };
+		00ED080C1B7D206700992C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00ED08111B7D206700992C5B /* Stryd iOS Task - Aaron MonickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stryd iOS Task - Aaron MonickUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00ED08151B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stryd_iOS_Task___Aaron_MonickUITests.swift"; sourceTree = "<group>"; };
+		00ED08171B7D206700992C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00ED08231B7D208100992C5B /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		00ED08251B7D213600992C5B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/ios-charts-swift-2.0/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00ED07EF1B7D206700992C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ED082B1B7D214D00992C5B /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00ED08031B7D206700992C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00ED080E1B7D206700992C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00ED07E91B7D206700992C5B = {
+			isa = PBXGroup;
+			children = (
+				00ED07F41B7D206700992C5B /* Stryd iOS Task - Aaron Monick */,
+				00ED08091B7D206700992C5B /* Stryd iOS Task - Aaron MonickTests */,
+				00ED08141B7D206700992C5B /* Stryd iOS Task - Aaron MonickUITests */,
+				00ED07F31B7D206700992C5B /* Products */,
+				00ED08251B7D213600992C5B /* Charts.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		00ED07F31B7D206700992C5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00ED07F21B7D206700992C5B /* Stryd iOS Task - Aaron Monick.app */,
+				00ED08061B7D206700992C5B /* Stryd iOS Task - Aaron MonickTests.xctest */,
+				00ED08111B7D206700992C5B /* Stryd iOS Task - Aaron MonickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00ED07F41B7D206700992C5B /* Stryd iOS Task - Aaron Monick */ = {
+			isa = PBXGroup;
+			children = (
+				00ED07F51B7D206700992C5B /* AppDelegate.swift */,
+				00ED07F71B7D206700992C5B /* ViewController.swift */,
+				00ED07F91B7D206700992C5B /* Main.storyboard */,
+				00ED07FC1B7D206700992C5B /* Assets.xcassets */,
+				00ED07FE1B7D206700992C5B /* LaunchScreen.storyboard */,
+				00ED08011B7D206700992C5B /* Info.plist */,
+				00ED08231B7D208100992C5B /* APIController.swift */,
+				000AAA0B1B7E635300C68E76 /* GraphView.swift */,
+			);
+			path = "Stryd iOS Task - Aaron Monick";
+			sourceTree = "<group>";
+		};
+		00ED08091B7D206700992C5B /* Stryd iOS Task - Aaron MonickTests */ = {
+			isa = PBXGroup;
+			children = (
+				00ED080A1B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickTests.swift */,
+				00ED080C1B7D206700992C5B /* Info.plist */,
+			);
+			path = "Stryd iOS Task - Aaron MonickTests";
+			sourceTree = "<group>";
+		};
+		00ED08141B7D206700992C5B /* Stryd iOS Task - Aaron MonickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00ED08151B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickUITests.swift */,
+				00ED08171B7D206700992C5B /* Info.plist */,
+			);
+			path = "Stryd iOS Task - Aaron MonickUITests";
+			sourceTree = "<group>";
+		};
+		00ED08261B7D213600992C5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00ED082A1B7D213600992C5B /* Charts.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00ED07F11B7D206700992C5B /* Stryd iOS Task - Aaron Monick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00ED081A1B7D206700992C5B /* Build configuration list for PBXNativeTarget "Stryd iOS Task - Aaron Monick" */;
+			buildPhases = (
+				00ED07EE1B7D206700992C5B /* Sources */,
+				00ED07EF1B7D206700992C5B /* Frameworks */,
+				00ED07F01B7D206700992C5B /* Resources */,
+				00ED082F1B7D214E00992C5B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00ED082E1B7D214D00992C5B /* PBXTargetDependency */,
+			);
+			name = "Stryd iOS Task - Aaron Monick";
+			productName = "Stryd iOS Task - Aaron Monick";
+			productReference = 00ED07F21B7D206700992C5B /* Stryd iOS Task - Aaron Monick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00ED08051B7D206700992C5B /* Stryd iOS Task - Aaron MonickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00ED081D1B7D206700992C5B /* Build configuration list for PBXNativeTarget "Stryd iOS Task - Aaron MonickTests" */;
+			buildPhases = (
+				00ED08021B7D206700992C5B /* Sources */,
+				00ED08031B7D206700992C5B /* Frameworks */,
+				00ED08041B7D206700992C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00ED08081B7D206700992C5B /* PBXTargetDependency */,
+			);
+			name = "Stryd iOS Task - Aaron MonickTests";
+			productName = "Stryd iOS Task - Aaron MonickTests";
+			productReference = 00ED08061B7D206700992C5B /* Stryd iOS Task - Aaron MonickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00ED08101B7D206700992C5B /* Stryd iOS Task - Aaron MonickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00ED08201B7D206700992C5B /* Build configuration list for PBXNativeTarget "Stryd iOS Task - Aaron MonickUITests" */;
+			buildPhases = (
+				00ED080D1B7D206700992C5B /* Sources */,
+				00ED080E1B7D206700992C5B /* Frameworks */,
+				00ED080F1B7D206700992C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00ED08131B7D206700992C5B /* PBXTargetDependency */,
+			);
+			name = "Stryd iOS Task - Aaron MonickUITests";
+			productName = "Stryd iOS Task - Aaron MonickUITests";
+			productReference = 00ED08111B7D206700992C5B /* Stryd iOS Task - Aaron MonickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00ED07EA1B7D206700992C5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = aaronmonick;
+				TargetAttributes = {
+					00ED07F11B7D206700992C5B = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					00ED08051B7D206700992C5B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 00ED07F11B7D206700992C5B;
+					};
+					00ED08101B7D206700992C5B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 00ED07F11B7D206700992C5B;
+					};
+				};
+			};
+			buildConfigurationList = 00ED07ED1B7D206700992C5B /* Build configuration list for PBXProject "Stryd iOS Task - Aaron Monick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00ED07E91B7D206700992C5B;
+			productRefGroup = 00ED07F31B7D206700992C5B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00ED08261B7D213600992C5B /* Products */;
+					ProjectRef = 00ED08251B7D213600992C5B /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				00ED07F11B7D206700992C5B /* Stryd iOS Task - Aaron Monick */,
+				00ED08051B7D206700992C5B /* Stryd iOS Task - Aaron MonickTests */,
+				00ED08101B7D206700992C5B /* Stryd iOS Task - Aaron MonickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00ED082A1B7D213600992C5B /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 00ED08291B7D213600992C5B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00ED07F01B7D206700992C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ED08001B7D206700992C5B /* LaunchScreen.storyboard in Resources */,
+				00ED07FD1B7D206700992C5B /* Assets.xcassets in Resources */,
+				00ED07FB1B7D206700992C5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00ED08041B7D206700992C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00ED080F1B7D206700992C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00ED07EE1B7D206700992C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ED07F81B7D206700992C5B /* ViewController.swift in Sources */,
+				00ED07F61B7D206700992C5B /* AppDelegate.swift in Sources */,
+				00ED08241B7D208100992C5B /* APIController.swift in Sources */,
+				000AAA0C1B7E635300C68E76 /* GraphView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00ED08021B7D206700992C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ED080B1B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00ED080D1B7D206700992C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ED08161B7D206700992C5B /* Stryd_iOS_Task___Aaron_MonickUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00ED08081B7D206700992C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00ED07F11B7D206700992C5B /* Stryd iOS Task - Aaron Monick */;
+			targetProxy = 00ED08071B7D206700992C5B /* PBXContainerItemProxy */;
+		};
+		00ED08131B7D206700992C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00ED07F11B7D206700992C5B /* Stryd iOS Task - Aaron Monick */;
+			targetProxy = 00ED08121B7D206700992C5B /* PBXContainerItemProxy */;
+		};
+		00ED082E1B7D214D00992C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 00ED082D1B7D214D00992C5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00ED07F91B7D206700992C5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00ED07FA1B7D206700992C5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00ED07FE1B7D206700992C5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00ED07FF1B7D206700992C5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00ED08181B7D206700992C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00ED08191B7D206700992C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00ED081B1B7D206700992C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Stryd iOS Task - Aaron Monick/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aaronmonick.Stryd-iOS-Task---Aaron-Monick";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00ED081C1B7D206700992C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Stryd iOS Task - Aaron Monick/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aaronmonick.Stryd-iOS-Task---Aaron-Monick";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		00ED081E1B7D206700992C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Stryd iOS Task - Aaron MonickTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aaronmonick.Stryd-iOS-Task---Aaron-MonickTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stryd iOS Task - Aaron Monick.app/Stryd iOS Task - Aaron Monick";
+			};
+			name = Debug;
+		};
+		00ED081F1B7D206700992C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Stryd iOS Task - Aaron MonickTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aaronmonick.Stryd-iOS-Task---Aaron-MonickTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stryd iOS Task - Aaron Monick.app/Stryd iOS Task - Aaron Monick";
+			};
+			name = Release;
+		};
+		00ED08211B7D206700992C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Stryd iOS Task - Aaron MonickUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aaronmonick.Stryd-iOS-Task---Aaron-MonickUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Stryd iOS Task - Aaron Monick";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		00ED08221B7D206700992C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Stryd iOS Task - Aaron MonickUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aaronmonick.Stryd-iOS-Task---Aaron-MonickUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Stryd iOS Task - Aaron Monick";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00ED07ED1B7D206700992C5B /* Build configuration list for PBXProject "Stryd iOS Task - Aaron Monick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ED08181B7D206700992C5B /* Debug */,
+				00ED08191B7D206700992C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00ED081A1B7D206700992C5B /* Build configuration list for PBXNativeTarget "Stryd iOS Task - Aaron Monick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ED081B1B7D206700992C5B /* Debug */,
+				00ED081C1B7D206700992C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00ED081D1B7D206700992C5B /* Build configuration list for PBXNativeTarget "Stryd iOS Task - Aaron MonickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ED081E1B7D206700992C5B /* Debug */,
+				00ED081F1B7D206700992C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00ED08201B7D206700992C5B /* Build configuration list for PBXNativeTarget "Stryd iOS Task - Aaron MonickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ED08211B7D206700992C5B /* Debug */,
+				00ED08221B7D206700992C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00ED07EA1B7D206700992C5B /* Project object */;
+}
